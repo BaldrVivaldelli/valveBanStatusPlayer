@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="theme-color" content="#7952b3">
+  </head>
+
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+  <body class="text-center">
+    <main class="form-signin">
+    <form method="POST" action="/profile/checkStatus">
+      <img class="mb-4" src="/images/png-clipart-computer-icons-steam-steam-icon-miscellaneous-video-game-thumbnail.png" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Valve Player Status</h1>
+      
+      <div class="form-floating" id="steamIdForm">
+        <input name ="steamIdPlayer" type="text" class="form-control" id="steamIdPlayer" placeholder="steam perfil url">
+        <label for="floatingInput"></label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" id="searchStatus" type="submit">Buscar info</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Creado por Augusto Vivaldelli para beneficio de una mejor comunidad</p>
+    </form>
+    </main>    
+  </body>
+</html>
