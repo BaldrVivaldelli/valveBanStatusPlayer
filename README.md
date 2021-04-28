@@ -1,2 +1,2 @@
 # valveBanStatusPlayer
-Es una pagina estatica que sirve para saber si un  player tiene vac
+Es un servicio que permite a cualquiera saber el estado de un jugador de algun aplicativo de Valve
